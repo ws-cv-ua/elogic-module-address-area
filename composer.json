@@ -1,0 +1,26 @@
+{
+    "name": "elogic/module-address-area",
+    "version": "1.0.0",
+    "description": "Custom customer address area attribute",
+    "authors": [{
+        "name": "Alex Rapatij",
+        "email": "pc.rapatij@gmail.com",
+        "homepage": "https://elogic.co/",
+        "role": "Developer"
+    }],
+    "type": "magento2-module",
+    "require": {
+        "magento/framework": "*"
+    },
+    "license": [
+        "Proprietary"
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Elogic\\AddressArea\\": ""
+        }
+    }
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Quote\Model\ShippingAddressManagement">
+        <plugin name="Elogic_AddressArea::set_area_to_quote_shipping_address"
+                type="Elogic\AddressArea\Plugin\SetAreaToQuoteShippingAddress"/>
+    </type>
+    <type name="Magento\Quote\Model\BillingAddressManagement">
+        <plugin name="Elogic_AddressArea::set_area_to_quote_billing_address"
+                type="Elogic\AddressArea\Plugin\SetAreaToQuoteBillingAddress"/>
+    </type>
+    <type name="Magento\Sales\Api\OrderRepositoryInterface">
+        <plugin name="set_area_for_order_addresses"
+                type="Elogic\AddressArea\Plugin\SetAreaForOrderAddresses"/>
+    </type>
+</config>

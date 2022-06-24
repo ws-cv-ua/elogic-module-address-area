@@ -1,0 +1,12 @@
+{
+    "quote_address": {
+        "column": {
+            "area": true
+        }
+    },
+    "sales_order_address": {
+        "column": {
+            "area": true
+        }
+    }
+}

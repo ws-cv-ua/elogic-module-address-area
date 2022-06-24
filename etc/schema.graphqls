@@ -1,0 +1,9 @@
+type CustomerAddress {
+    area: String
+        @doc(description: "Custom area attribute value")
+}
+
+input CustomerAddressInput {
+    area: String
+        @doc(description: "Custom area attribute value")
+}
