@@ -3,6 +3,11 @@ type CustomerAddress {
         @doc(description: "Custom area attribute value")
 }
 
+type OrderAddress {
+    area: String
+        @doc(description: "Custom area attribute value")
+}
+
 input CustomerAddressInput {
     area: String
         @doc(description: "Custom area attribute value")
